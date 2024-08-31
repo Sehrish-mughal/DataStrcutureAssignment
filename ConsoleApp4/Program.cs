@@ -1,9 +1,4 @@
-﻿
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 class Program
 {
@@ -75,32 +70,7 @@ class Program
                 } while (string.IsNullOrWhiteSpace(firstName) || !IsValidName(firstName));
                 personal_3.AddLast(firstName);
 
-                //if (IsNameExist(Contacts, firstName))
-                //{
-                //    Console.WriteLine("This Contact Already Exist.");
-                //    firstName = null;
-                //    continue;
-                //}
-
-                //bool isValueDuplicate = false; //duplicate data
-
-                //foreach (var duplicate in Contacts)
-                //{
-                //    var firstNameInLoop = duplicate.ElementAt(0);
-                //    var lastNameInLoop = duplicate.ElementAt(1);
-
-                //    if (firstNameInLoop == firstName || lastNameInLoop == firstName)
-                //    {
-                //        isValueDuplicate = true;
-                //        break;
-                //    }
-                //}
-                //if (isValueDuplicate)
-                //{
-                //    Console.WriteLine("This Contact Already Exist.");
-                //    continue;
-
-                //}
+                
                 //LastName Input Field
                 string lastName;
                 do
@@ -133,29 +103,7 @@ class Program
                 }
 
 
-                //////////////////Duplicate data///////////////////
-
-                //bool isDuplicate = false;
-
-                //foreach (var duplicate in Contacts)
-                //{
-                //    var firstNameInLoop = duplicate.ElementAt(0);
-                //    var lastNameInLoop = duplicate.ElementAt(1);
-
-                //    //var firIndex = duplicate.ElementAt(0);
-                //    if (firstNameInLoop == firstName && lastNameInLoop == lastName)
-                //    {
-                //        isDuplicate = true;
-                //        break;
-                //    }
-                //}
-                //if (isDuplicate)
-                //{
-                //    Console.WriteLine("This Contact Already Exist.");
-                //    continue;
-
-
-                //}
+                
 
                 //Contact Input Field
                 string phone;
@@ -322,41 +270,6 @@ class Program
                     }
                 }
 
-                //Console.WriteLine("-----------------------------------Search Information-----------------------------------");
-                //Console.WriteLine(" ");
-
-                //Console.Write("Type Search: ");
-                //string searchTerm = Console.ReadLine();
-                //bool found = false;
-
-
-                //foreach (var arlist in Contacts)
-                //{
-                //    bool isRecordMatched = false;
-
-                //    foreach (var item in arlist)
-                //    {
-                //        if (item.ToString().Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
-                //        {
-                //            isRecordMatched = true;
-                //            break;
-                //        }
-                //    }
-
-
-                //    if (isRecordMatched)
-                //    {
-                //        found = true;
-
-
-                //        foreach (var item in arlist)
-                //        {
-                //            Console.Write(item + "\t\t");
-
-                //        }
-                //        Console.WriteLine();
-                //    }
-                //}
 
                 if (!found)
                 {
